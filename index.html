@@ -2,274 +2,349 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>海外旅游网站ycx</title>
+    <title>发表说说</title>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.randrange.js"></script>
+    <script type="text/javascript" src="js/jquery.repeatstring.js"></script>
+    <script type="text/javascript" src="js/jquery.randomfilter.js"></script>
+    <script type="text/javascript" src="js/jquery.near.js"></script>
+    <script type="text/javascript" src="js/jquery.minesweeper.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
 
 </head>
 <body>
 <!--头部-->
 <div class="header">
-    <div class="header_top"><p>全国免费服务热线：   <span>96556 0731-63123745</span>  旅游社同行热线:    <span>99543 3456-5798658</span>    &nbsp &nbsp  <span id="logo">登录</span>     &nbsp <span id="reg">注册</span></p> </div>
-    <hr />
-    <div class="header_bottom">
-        <img src="img/1.JPG" />
-        <ul>
-            <li class="active">首页</li>
-            <li>出境游</li>
-            <li>国内游</li>
-            <li>特价游</li>
-            <li>签证  </li>
-        </ul>
-        <input type="text" class="text" placeholder="输入目的地" /><input type="submit" class="sub" value="搜索" />
-    </div>
-</div>
-<div class="main">
-    <div class="nav">
-        <ul class="nav_1">
-            <li id="li0">出境跟团游
-                <div class="trip">
-                    <div class="trip_top">
-                        <p style="margin-left:-140px;"> <span>台湾港澳：</span>台湾|香港|澳门</p>
-                        <p><span>东南亚：</span>泰国|新加坡|马来西亚|越南|柬埔寨|老挝|<br />印度|尼泊尔</p>
-                    </div>
-                    <div class="trip_bottom">
-                         <p  style="margin-left:-140px;"> <span>台湾港澳：</span>台湾|香港|澳门</p>
-                         <p><span>东南亚：</span>泰国|新加坡|马来西亚|越南|柬埔寨|老挝|印度|尼泊尔</p>
-                    </div>
-                </div>
-            </li>
-            <li>出境自由行
-
-            </li>
-            <li>国内跟团游</li>
-            <li>国内自由行</li>
-            <li>湖南周边游</li>
-        </ul>
-        <ul class="nav_2">
-            <li>泰国</li>
-            <li>台湾</li>
-            <li>普吉</li>
-        </ul>
-    </div>
-    <div class="main_img" id="fade">
-        <ul>
-            <li  style="z-index:2222"><img src="img/2.jpg" /></li>
-			<li><img src="img/3.jpg" /></li>
-            <li><img src="img/4.jpg" /></li>
-			<li><img src="img/6.jpg" /></li>
-            <li><img src="img/7.jpg" /></li>
-            <li><img src="img/5.jpg" /></li>
-        </ul>
-    </div>
-    <div class="main_2">
-        <div class="main2_left">
-            <div>
-                <div class="autoImg">
-                    <img style="z-index:666" src="img/3_1.jpg" />
-                    <img src="img/4_1.jpg" />
-                    <img src="img/5_1.jpg" />
-                    <img src="img/6_1.jpg" />
-                    <img src="img/7_1.jpg" />
-                </div>
-                <ul class="button">
-                    <li class="hover"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-        </div>
-        <div class="main2_right">
-            <h2 class="main_title">
-                <span style="font-size:40px;">R</span>路线推荐
-            </h2>
-                <div class="tab">
-                    <ul class="tabNav4">
-                        <li class="active">
-                            新品推荐 <a class="triangle_down_red" href="javascript:"></a>
-                        </li>
-                        <li class="gradient">
-                            热门推荐<a class="triangle_down_gray" href="javascript:"></a>
-                        </li>
-                        <li class="gradient">
-                            高端定制<a class="triangle_down_gray" href="javascript:"></a>
-                        </li>
-                    </ul>
-                </div>
-            <ul class="wrap_list1 tabCon4">
-                <li><img src="img/11.jpg" /></li>
-                <li><img src="img/22.jpg"></li>
-                <li><img src="img/33.jpg"></li>
-                <li><img src="img/44.jpg"></li>
-            </ul>
-            <ul class="wrap_list1 tabCon4">
-                <li><img src="img/55.jpg" /></li>
-                <li><img src="img/66.jpg"></li>
-                <li><img src="img/77.jpg"></li>
-                <li><img src="img/88.jpg"></li>
-            </ul>
-            <ul class="wrap_list1 tabCon4">
-                <li><img src="img/99.jpg" title=""/></li>
-                <li><img src="img/110.jpg"></li>
-                <li><img src="img/120.jpg"></li>
-                <li><img src="img/130.jpg"></li>
-            </ul>
-    </div>
-    </div>
-
-    <div class="trip">
-        <div class="trip_header">
-            <h3><span style="font-size:35px;">E</span>出境路线</h3>
-            <div class="trip_nav">
-                <div class="trip_text">
+    <ul class="ul1">
+        <li><img src="img/1.svg"><span style="font-size:16px;font-weight:bold;">QQ空间</span></li>
+        <li><img src="img/个人中心%20.svg"><span>个人中心</span></li>
+        <li id="myMain"><img src="img/我的主页.svg"><span>我的主页</span>
+            <div class="Con" id="nav">
+                <div class="con_left"><img style="width:50px;height:50px;" src="img/个人.svg"></div>
+                <div class="con_right">
                     <ul>
-                        <li class="hover">东南亚</li>
-                        <li>日韩</li>
-                        <li>台湾</li>
-                        <li>港澳</li>
-                        <li>海岛</li>
-                        <li>大洋洲</li>
-                        <li>欧洲</li>
-                        <li>非洲</li>
-                        <li>美洲</li>
+                        <li><img src="img/日志.png"><span>日志</span></li>
+                        <li><img src="img/图片.png"><span>相册</span></li>
+                        <li><img src="img/说说.png"><span>说说</span></li>
+                        <li><img src="img/分享.png"><span>分享</span></li>
+                        <li><img src="img/视频.png"><span>视频</span></li>
+                        <li><img src="img/音乐.png"><span>音乐</span></li>
+                        <li><img src="img/编辑.png"><span>留言板</span></li>
+                        <li><img src="img/个人档.png"><span>个人档</span></li>
+                        <li><img src="img/收藏.png"><span>收藏</span></li>
                     </ul>
-
                 </div>
             </div>
+        </li>
+        <li id="friend"><img src="img/好友.svg"><span>好友</span>
+            <div class="Con1">
+                <div class="friend_left">
+                    <img src="img/寻找好友.png" /><br /><span>&nbsp 寻找好友</span><br />
+                    <img src="img/亲密度.png" /><br /><span>&nbsp 亲密度</span>
+                </div>
+                <div class="friend_right">
+                    <p><span>最近联系好友</span><input type="text" placeholder="搜索好友" /><img src="img/搜索.png" /></p>
+                     <div class="link"><img src="img/最近联系好友.png" /></div>
+                </div>
+            </div>
+        </li>
+        <li id="game"><img src="img/游戏.svg"><span>游戏</span>
+            <div class="Con2">
+                <div class="Con2_left">
+                    <ul>
+                        <li><img src="img/积分商城.png" style="width:50px;height:50px;"><br /><span>积分商城</span></li>
+                        <li><img src="img/送礼品.png"><br /><span>每日礼品</span></li>
+                        <li><img src="img/找游戏.png"><br /><span>找游戏</span></li>
+                    </ul>
+                </div>
+                <div class="Con2_right">
+                    <img src="img/游戏.png" style="width:400px;height:300px;margin:15px auto;">
+                </div>
+            </div>
+        </li>
+        <li id="person"><img src="img/个性装扮.svg"><span>装扮</span>
+            <div class="Con3" id="bg">
+                <ul>
+                    <li><img src="img/s_bg1.jpg" /></li>
+                    <li><img src="img/s_bg2.jpg" /></li>
+                    <li><img src="img/s_bg3.jpg" /></li>
+                    <li><img src="img/s_bg4.jpg" /></li>
+                    <li><img src="img/s_bg5.jpg" /></li>
+                    <li><img src="img/s_bg6.jpg" /></li>
+                </ul>
+            </div>
+        </li>
+        <li id="music"><img src="img/背景音乐 .svg"><span>背景音乐</span></li>
+        <li style="float:right;margin-right:-120px;border-radius:60%;background:rgba(161, 152, 75, 0.82);" id="Exit"><span style="color:red;font-weight:bold;font-size:12px;">退出登录</span></li>
+    </ul>
+</div>
+<!--导航部分-->
+<div class="nav">
+    <span style="font-size:30px;font-weight:bold;height:35px;color:#FF9E3C;margin-top:20px;">LUCKY GIRL的空间</span>
+    <span>努力不一定成功，放弃却一定失败</span>
+    <div class="name">
+        <div class="name1">
+                <img style="width:150px;height:150px;" src="img/s_bg5.jpg" />
         </div>
-        <div class="trip_left">
-            <img src="img/1-2.jpg" />
-        </div>
-        <div class="trip_right">
-            <img src="img/1-1.jpg" />
+        <div class="name2">
+            <div class="main"><span>一个人，一座城<img src="img/钻石.svg" /></span>
+
+			</div>
+            <div class="main1">
+                <ul>
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">日志</a></li>
+                    <li class="photo"><a href="#">相册</a>
+                        <div class="photo_main">
+                            <div id="Message">
+                                <!--留言开始-->
+                                <div class="MesCon">
+                                    <div class="imgBut">上传照片</div>
+                                    <div class="Edit" contenteditable="true"></div>
+                                </div>
+                                <!--留言结束-->
+                                <!--按钮开始-->
+                                <div class="MesBut">
+                                    <font>本地上传</font><font class="tz">拖拽上传</font> <span>发表</span>
+                                </div>
+                                <!--按钮结束-->
+                                <div class="tzImg">
+                                    <p class="tis">请将图片拖拽到此区域</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="lyb.html">留言板</a></li>
+                    <li><a href="#">说说</a></li>
+                    <li><a href="#">个人档</a></li>
+                    <li><a href="#">音乐</a></li>
+                    <li id="personal"><a href="#">时光轴</a></li>
+                    <li id="playGame"><a href="#">游戏</a>
+                        <div class="playGame1">
+                            <center>
+                                <h1>扫雷小游戏<img id="closeGame" src="img/close.png" /></h1>
+                                <table cellspacing="2" class="mine-sweeper"><tbody>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="">1</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td></tr>
+                                <tr><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active bomb">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td><td class="active">&nbsp;</td></tr></tbody></table>
+                            </center>
+
+                        </div>
+
+                    </li>
+                    <li><a href="#">更多</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="Img_show">
-        <div class="tab1">
-            <ul class="tabNav1">
-                <li class="active">签证服务</li>
-                <li class="gradient">公司新闻</li>
-                <li class="gradient">我的品牌</li>
-                <li class="gradient">合作伙伴</li>
-                <li  style="width:208px" class="gradient"></li>
+</div>
+<div class="music">
+    <!--左边图片-->
+    <div class="musicImg">
+        <img src="img/music3.jpg" style="width:150px;height:150px;border-radius:50%;" class="xpic">
+    </div>
+    <!--右边播放-->
+    <div class="musicCon">
+        <h3 id="playBut">泡沫---邓紫棋</h3>
+        <dl>
+            <dt><img class="imgBut1" style="border-radius:50%;" src="img/play.png" ></dt>
+            <dd>
+                <p class="music_jb"></p>
+                <p class="music_jb1"></p>
+            </dd>
+        </dl>
+    </div>
+</div>
+<!--主内容左半部分-->
+<div class="left">
+    <ul>
+        <li style="background:#FFE09A;border-radius:5px;"><a href="#"><img src="img/11.svg" />好友动态</a></li>
+        <li><a href="#"><img src="img/12.svg">特别关心</a></li>
+        <li><a href="#"><img src="img/13.svg">与我相关</a></li>
+        <li><a href="#"><img src="img/14.svg">直播广场</a></li>
+        <li><a href="#"><img src="img/15.svg">那年今日</a></li>
+        <li><a href="#"><img src="img/16.svg">游戏应用</a></li>
+        <li><a href="#"><img src="img/17.svg">我的收藏</a></li>
+        <li><a href="#"><img src="img/18.svg">微云备份</a></li>
+        <li><a href="#"><img src="img/19.svg">企鹅FM</a></li>
+        <li><a href="#"><img src="img/20.svg">QQ阅读</a></li>
+        <li><a href="#"><img src="img/21.svg">实名朋友</a></li>
+        <li><a href="#"><img src="img/22.svg">认证空间</a></li>
+        <li><a href="#"><img src="img/23.svg">QQ演出</a></li>
+        <li><a href="#"><img src="img/24.svg">吃喝玩乐</a></li>
+    </ul>
+</div>
+<!--主内容右半部分-->
+<div class="right">
+     <div class="right_top">
+        <img src="img/周.png" />
+     </div>
+    <div class="right_main" id="fade">
+        <ul>
+            <li  class="active"><img src="img/big2.jpg"></li>
+            <li><img src="img/big3.jpg"></li>
+            <li><img src="img/big4.jpg"></li>
+        </ul>
+    </div>
+    <div class="right_bottom">
+        <h3>大家都在看</h3>
+        <ul>
+            <li>
+                <div class="img"><a href="http://www.miaov.com/2013"><img src="img/周董.png" alt="内容图片" /></a></div>
+                <div class="text">
+                    <p>周董战队学员唱功太强？费玉清全程陶醉脸....</p>
+                </div>
+            </li>
+            <li>
+                <div class="img"><a href="http://www.miaov.com/2013"><img src="img/小技巧.png" alt="内容图片" /></a></div>
+                <div class="text">
+                    <p>一些非常实用的生活小技巧，太有创意了！....</p>
+                </div>
+            </li>
+            <li>
+                <div class="img"><a href="http://www.miaov.com/2013"><img src="img/钻戒.png" alt="内容图片" /></a></div>
+                <div class="text">
+                    <p>男士一生仅能定制一枚的钻戒，你敢送吗....</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--发表说说-->
+<div id="qq">
+    <p>有什么新鲜事告诉大家??</p>
+    <div class="message" contentEditable="true"></div>
+    <div class="button">
+        <img src="img/bba_thumb.gif" id="bq">
+        <span class="submit" id="submit">发表</span>
+        <div class="face">
+            <ul>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+                <li><img src="img/rabbit_thumb.gif"></li>
+                <li><img src="img/sweata_thumb.gif"></li>
+                <li><img src="img/money_thumb.gif"></li>
+                <li><img src="img/lxhluguo_thumb.gif"></li>
+                <li><img src="img/cf_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+                <li><img src="img/rabbit_thumb.gif"></li>
+                <li><img src="img/sweata_thumb.gif"></li>
+                <li><img src="img/money_thumb.gif"></li>
+                <li><img src="img/lxhluguo_thumb.gif"></li>
+                <li><img src="img/cf_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/88_thumb.gif"></li>
+                <li><img src="img/angrya_thumb.gif"></li>
+                <li><img src="img/bofubianlian_thumb.gif"></li>
+                <li><img src="img/bs_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/cf_thumb.gif"></li>
+                <li><img src="img/bs2_thumb.gif"></li>
+                <li><img src="img/cake.gif"></li>
+                <li><img src="img/geili_thumb.gif"></li>
+                <li><img src="img/qq_thumb.gif"></li>
             </ul>
         </div>
-        <ul class="wrap_list tabCon1">
-            <li><img src="img/1-3.jpg" /></li>
-            <li><img style="width:316px;height:220px;" src="img/1-5.jpg" /></li>
-            <li><img  src="img/1-4.jpg" /></li>
-            <li><img style="width:135px;height:120px;" src="img/160.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/150.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/140.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/130.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/120.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/110.jpg"></li>
-            <li><img style="width:145px;height:120px;" src="img/100.jpg"></li>
-        </ul>
+    </div>
+</div>
+<!--发表说说结束-->
+<!--发表说说成功显示-->
+<div class="mesCon">
 
-        <ul class="wrap_list tabCon1">
-            <li><img style="width:145px;height:120px;" src="img/130.jpg"></li>
-            <li><img style="width:145px;height:120px;" src="img/120.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/110.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/100.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/160.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/150.jpg"></li>
-            <li><img style="width:135px;height:120px;" src="img/140.jpg"></li>
-            <li><img src="img/1-3.jpg" /></li>
-            <li><img style="width:310px;height:220px;" src="img/1-5.jpg" /></li>
-            <li><img  src="img/1-4.jpg" /></li>
+</div>
+<!--html5音乐播放器-->
+<audio src="music/泡沫.mp3"  id="music_audio" ></audio>
+<audio src="music/最熟悉的陌生人.mp3" controls id="music_1"></audio>
+<div class="shadow">
 
-        </ul>
+</div>
 
+<div class="bigImg"><img src="img/1.jpg" /></div>
+<div class="imgList">
+    <h3>图片相册<img src="img/close.png" class="close" /></h3>
+    <ul>
+        <li><img src="img/s_1.jpg" /></li>
+        <li><img src="img/s_2.jpg" /></li>
+        <li><img src="img/s_3.jpg" /></li>
+        <li><img src="img/s_4.jpg" /></li>
+        <li><img src="img/s_5.jpg" /></li>
+        <li><img src="img/s_6.jpg" /></li>
+        <li><img src="img/s_7.jpg" /></li>
+        <li><img src="img/s_8.jpg" /></li>
+        <li><img src="img/s_9.jpg" /></li>
+    </ul>
+</div>
+<div class="button1">
+    <div class="Img_close">关闭</div>
+    <div class="buttonCon">
+        <img src="img/album.png" class="album" />
+        <img src="img/back_dull.png" class="back_dull" />
+        <img src="img/play_dull.png" class="play" />
+        <img src="img/forward_dull.png" class="forward" />
+    </div>
+</div>
+<div class="timer">
+    <span>距离我们毕业还剩：</span>
+    <div class="content">
+        <input type="text" id="time_d" placeholder="" />天
+        <input type="text" id="time_h" placeholder="" />时
+        <input type="text" id="time_m" placeholder="" />分
+        <input type="text" id="time_s" placeholder="" />秒
     </div>
 </div>
 
-
-
-<div class="bottom">
-    <div class="bottom_top">
-        <img src="img/1.png" />
-        <ul class="text">
-            <li class="about">
-                <h2>服务承诺</h2>
-                <ul>
-                    <li>我们的服务</li>
-                    <li>我们的承诺</li>
-                    <li>      荣誉</li>
-                </ul>
-            </li>
-            <li class="about">
-                <h2>技术实力</h2>
-                <ul>
-                    <li>专家推荐</li>
-                    <li>热门推荐</li>
-                    <li>网友推荐</li>
-                </ul>
-            </li>
-            <li class="about">
-                <h2>服务承诺</h2>
-                <ul>
-                    <li>我们的服务</li>
-                    <li>我们的承诺</li>
-                    <li>      荣誉</li>
-                </ul>
-            </li>
-            <li class="about">
-                <h2>关于我们</h2>
-                <ul>
-                    <li>公司简介</li>
-                    <li>新闻动态</li>
-                    <li> 招贤纳士</li>
-                    <li>联系我们</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="bottom_main">
-        <p>湘ICP路147934294634号      邮政编码：2738546   联系电话： 8734-2344546或234-182434096</p>
-    </div>
-    <div class="bottom_bottom">
-        <p>全省免费服务热线： <span style="font-weight:bold;">96556  764-322849334</span> 同社同行服务热线： <span style="font-weight:bold;">2334  325-476856</span> <img src="img/2.png"></p>
-    </div>
-</div>
-
-<!--登录界面-->
-<div class="logo">
-    <form id="form">
-        <div id="close" style="position:absolute;right:0;top:0;width:22px;height:22px;border-radius:50%;line-height:22px;font-weight:bold;background:#ffece5;text-align:center;border:1px solid gray;">X</div>
-        <h1>欢迎登录旅游网站</h1>
-        <hr />
-        <div class="logo_nav">
-            <p>登录名 ：<input type="text"  placeholder="请输入手机号或邮箱或登录名" /></p>
-            <p>密 &nbsp码：<input type="password" placeholder="请输入密码" /></p>
-            <p style="margin-left:83px;"><input style="color:#fff;background:#ff26bf;font-size:16px;font-weight:bold;" type="submit" value="登录"/></p>
-        </div>
-    </form>
-</div>
-
-<div class="reg">
-    <div id="reg_close" style="position:absolute;right:0;top:0;width:22px;height:22px;border-radius:50%;line-height:22px;font-weight:bold;background:#ffece5;text-align:center;border:1px solid gray;">X</div>
-    <h1>欢迎注册</h1>
-    <hr />
-    <div class="reg_main">
-        <p>姓名：<input class="text" type="text" placeholder="请输入你的姓名" /></p>
-        <p>国籍：<input class="text" type="text" placeholder="请输入您的国籍" /></p>
-        <p>性别：<input style="margin-top:10px;" type="radio" name="sex" placeholder="" />男&nbsp &nbsp<input type="radio" name="sex" placeholder="" />女&nbsp &nbsp</p>
-        <p>电话：<input class="text" type="text" placeholder="请输入你的联系方式" /></p>
-        <p>密码：<input class="text" type="password" placeholder="请输入你的密码" /></p>
-        <p>确认：<input class="text" type="password" placeholder="请确认你的密码" /></p>
-        <p><input class="text"  style="margin-left:50px;color:#fff;background:#ff68fb;" type="submit" value="确认注册" /></p>
-    </div>
-</div>
-
-<!--注册界面-->
-<div class="shadow"></div>
 </body>
 </html>
-
-
-
